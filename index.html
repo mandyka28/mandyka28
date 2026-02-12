@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual 3D Candle</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: radial-gradient(circle at 30% 20%, #16111f 0%, #09070d 50%, #030205 100%);
+        font-family: Inter, system-ui, sans-serif;
+        color: #f2d9a0;
+      }
+
+      #app {
+        width: 100%;
+        height: 100%;
+      }
+
+      .hud {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        background: rgba(8, 5, 13, 0.68);
+        border: 1px solid rgba(255, 182, 83, 0.3);
+        border-radius: 12px;
+        padding: 0.75rem 0.9rem;
+        backdrop-filter: blur(6px);
+        max-width: 280px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      }
+
+      .hud h1 {
+        font-size: 0.95rem;
+        margin: 0 0 0.4rem;
+      }
+
+      .hud p {
+        margin: 0;
+        line-height: 1.35;
+        font-size: 0.82rem;
+        color: #d8c7ab;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="hud">
+      <h1>Virtual Ritual Candle</h1>
+      <p>The wax slowly melts while the flame flickers and lights the altar.</p>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
